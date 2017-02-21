@@ -1,0 +1,16 @@
+[
+{
+  "modid": "pstest",
+  "name": "Test Mod",
+  "description": "My very first mod to figure things out and test stuff.",
+  "version": "1.0",
+  "mcversion": "1.11.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["PureSalvation"],
+  "credits": "For the sake of learning",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
