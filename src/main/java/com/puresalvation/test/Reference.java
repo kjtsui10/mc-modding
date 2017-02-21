@@ -14,4 +14,33 @@ public class Reference {
 	
 	public static final String CLIENT_PROXY_CLASS = "com.puresalvation.test.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "com.puresalvation.test.proxy.ServerProxy";
+	
+	public static enum TestItems 
+	{
+		/* Naming Convention
+		 * 
+		 * unlocalizedName = name of the ModItems variable (e.g. meatball)
+		 * registryName = name of the item's class (e.g. ItemMeatball)
+		 */
+		MEATBALL("meatball", "ItemMeatball");
+		
+		private String unlocalizedName;
+		private String registryName;
+		
+		TestItems(String unlocalizedName, String registryName)
+		{
+			this.unlocalizedName = unlocalizedName;
+			this.registryName = registryName;
+		}
+		
+		public String getRegistryName() 
+		{
+			return this.registryName;
+		}
+		
+		public String getUnlocalizedName() 
+		{
+			return this.unlocalizedName;
+		}
+	}
 }
