@@ -22,7 +22,8 @@ public class Reference {
 		 * unlocalizedName = name of the ModItems variable (e.g. meatball)
 		 * registryName = name of the item's class (e.g. ItemMeatball)
 		 */
-		MEATBALL("meatball", "ItemMeatball");
+		MEATBALL("meatball", "ItemMeatball"),
+		SUPERPICK("superpick", "ItemSuperpick");
 		
 		private String unlocalizedName;
 		private String registryName;

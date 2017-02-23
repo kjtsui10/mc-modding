@@ -1,16 +1,20 @@
 package com.puresalvation.test.init;
 
 import com.puresalvation.test.Reference;
+import com.puresalvation.test.TestMod;
 import com.puresalvation.test.items.ItemMeatball;
+import com.puresalvation.test.items.ItemSuperpick;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 	
 	public static Item meatball;
+	public static Item superpick;
 	
 	/*
 	 * Initialize the items
@@ -18,6 +22,8 @@ public class ModItems {
 	public static void init() 
 	{
 		meatball = new ItemMeatball();
+		superpick = new ItemSuperpick(TestMod.SAVAGE_MATERIAL, TestMod.MY_EFFECTIVE_ON_1);
+		//superpick = new ItemSuperpick(EnumHelper.addToolMaterial("SAVAGE", 3, 300, 12.0F, 10.0F, 15), TestMod.MY_EFFECTIVE_ON_1);
 	}
 	
 	/*
@@ -26,6 +32,7 @@ public class ModItems {
 	public static void register() 
 	{
 		GameRegistry.register(meatball);
+		GameRegistry.register(superpick);
 	}
 
 	/*
@@ -34,6 +41,7 @@ public class ModItems {
 	public static void registerRenders()
 	{
 		registerRender(meatball);
+		registerRender(superpick);
 	}
 	
 	/*
