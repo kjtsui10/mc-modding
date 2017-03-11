@@ -23,7 +23,9 @@ public class Reference {
 		 * registryName = name of the item's class (e.g. ItemMeatball)
 		 */
 		MEATBALL("meatball", "ItemMeatball"),
-		SUPERPICK("superpick", "ItemSuperpick");
+		SUPERPICK("superpick", "ItemSuperpick"),
+		MULTITOOL("multitool", "ItemMultiTool"),
+		BASICMULTITOOL("basicmultitool", "ItemBasicMultiTool");
 		
 		private String unlocalizedName;
 		private String registryName;

@@ -1,4 +1,6 @@
 item.meatball.name=Meatball
 item.superpick.name=Super Pickaxe
+item.multitool.name=Multi-Tool
+item.basicmultitool.name= Basic Multi-Tool
 
 itemGroup.tab_mod=Custom Mod Tab

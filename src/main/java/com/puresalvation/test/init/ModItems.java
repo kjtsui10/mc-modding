@@ -2,7 +2,9 @@ package com.puresalvation.test.init;
 
 import com.puresalvation.test.Reference;
 import com.puresalvation.test.TestMod;
+import com.puresalvation.test.items.ItemBasicMultiTool;
 import com.puresalvation.test.items.ItemMeatball;
+import com.puresalvation.test.items.ItemMultiTool;
 import com.puresalvation.test.items.ItemSuperpick;
 
 import net.minecraft.client.Minecraft;
@@ -15,6 +17,8 @@ public class ModItems {
 	
 	public static Item meatball;
 	public static Item superpick;
+	public static Item multitool;
+	public static Item basicmultitool;
 	
 	/*
 	 * Initialize the items
@@ -23,6 +27,8 @@ public class ModItems {
 	{
 		meatball = new ItemMeatball();
 		superpick = new ItemSuperpick(TestMod.SAVAGE_MATERIAL, TestMod.MY_EFFECTIVE_ON_1);
+		multitool = new ItemMultiTool(TestMod.MULTITOOL_MATERIAL, TestMod.MULTITOOL_EFFECTIVE_ON);
+		basicmultitool = new ItemBasicMultiTool(TestMod.BASIC_MULTITOOL_MATERIAL, TestMod.MULTITOOL_EFFECTIVE_ON);
 		//superpick = new ItemSuperpick(EnumHelper.addToolMaterial("SAVAGE", 3, 300, 12.0F, 10.0F, 15), TestMod.MY_EFFECTIVE_ON_1);
 	}
 	
@@ -33,6 +39,8 @@ public class ModItems {
 	{
 		GameRegistry.register(meatball);
 		GameRegistry.register(superpick);
+		GameRegistry.register(multitool);
+		GameRegistry.register(basicmultitool);
 	}
 
 	/*
@@ -42,6 +50,8 @@ public class ModItems {
 	{
 		registerRender(meatball);
 		registerRender(superpick);
+		registerRender(multitool);
+		registerRender(basicmultitool);
 	}
 	
 	/*
