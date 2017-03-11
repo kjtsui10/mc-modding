@@ -5,6 +5,7 @@ import com.puresalvation.test.TestMod;
 import com.puresalvation.test.items.ItemBasicMultiTool;
 import com.puresalvation.test.items.ItemMeatball;
 import com.puresalvation.test.items.ItemMultiTool;
+import com.puresalvation.test.items.ItemShuriken;
 import com.puresalvation.test.items.ItemSuperpick;
 
 import net.minecraft.client.Minecraft;
@@ -19,6 +20,7 @@ public class ModItems {
 	public static Item superpick;
 	public static Item multitool;
 	public static Item basicmultitool;
+	public static Item shuriken;
 	
 	/*
 	 * Initialize the items
@@ -29,6 +31,7 @@ public class ModItems {
 		superpick = new ItemSuperpick(TestMod.SAVAGE_MATERIAL, TestMod.MY_EFFECTIVE_ON_1);
 		multitool = new ItemMultiTool(TestMod.MULTITOOL_MATERIAL, TestMod.MULTITOOL_EFFECTIVE_ON);
 		basicmultitool = new ItemBasicMultiTool(TestMod.BASIC_MULTITOOL_MATERIAL, TestMod.MULTITOOL_EFFECTIVE_ON);
+		shuriken = new ItemShuriken();
 		//superpick = new ItemSuperpick(EnumHelper.addToolMaterial("SAVAGE", 3, 300, 12.0F, 10.0F, 15), TestMod.MY_EFFECTIVE_ON_1);
 	}
 	
@@ -41,6 +44,7 @@ public class ModItems {
 		GameRegistry.register(superpick);
 		GameRegistry.register(multitool);
 		GameRegistry.register(basicmultitool);
+		GameRegistry.register(shuriken);
 	}
 
 	/*
@@ -52,6 +56,7 @@ public class ModItems {
 		registerRender(superpick);
 		registerRender(multitool);
 		registerRender(basicmultitool);
+		registerRender(shuriken);
 	}
 	
 	/*

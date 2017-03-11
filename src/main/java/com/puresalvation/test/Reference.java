@@ -25,7 +25,8 @@ public class Reference {
 		MEATBALL("meatball", "ItemMeatball"),
 		SUPERPICK("superpick", "ItemSuperpick"),
 		MULTITOOL("multitool", "ItemMultiTool"),
-		BASICMULTITOOL("basicmultitool", "ItemBasicMultiTool");
+		BASICMULTITOOL("basicmultitool", "ItemBasicMultiTool"),
+		SHURIKEN("shuriken", "ItemShuriken");
 		
 		private String unlocalizedName;
 		private String registryName;
