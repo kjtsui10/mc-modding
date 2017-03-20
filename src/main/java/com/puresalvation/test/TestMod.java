@@ -3,6 +3,7 @@ package com.puresalvation.test;
 import java.util.Set;
 
 import com.google.common.collect.Sets;
+import com.puresalvation.test.entity.EntityShuriken;
 import com.puresalvation.test.init.ModCrafting;
 import com.puresalvation.test.init.ModItems;
 import com.puresalvation.test.proxy.CommonProxy;
@@ -57,8 +58,14 @@ public class TestMod {
 	{
 		System.out.println("Pre Init");
 		
+		// Using Polymorphism, will appropriately call preInit for both client and server side
+		proxy.preInit();
+		
 		ModItems.init();
 		ModItems.register();
+
+		// Register Entities
+		EntityShuriken.registerEntity(); // !!!!! CAUSING CRASH !!!!!
 	}
 	
 	@EventHandler

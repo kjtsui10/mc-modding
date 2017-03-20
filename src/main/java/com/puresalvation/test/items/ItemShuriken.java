@@ -2,6 +2,7 @@ package com.puresalvation.test.items;
 
 import com.puresalvation.test.Reference;
 import com.puresalvation.test.TestMod;
+import com.puresalvation.test.entity.EntityShuriken;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntitySnowball;
@@ -61,13 +62,15 @@ public class ItemShuriken extends Item {
 		// (3) Create and Spawn the shuriken entity into the world
 		if (!worldIn.isRemote)
 		{
-			//EntityShuriken shuriken = new EntityShuriken(worldIn, playerIn);
-			EntitySnowball snowball = new EntitySnowball(worldIn, playerIn);
+			EntityShuriken shuriken = new EntityShuriken(worldIn, playerIn);
+			//EntitySnowball snowball = new EntitySnowball(worldIn, playerIn);
 			
 			// Set the entity's direction, velocity, inaccuracy, rotation, etc.
-			snowball.setHeadingFromThrower(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.5F, 1.0F);
+			//snowball.setHeadingFromThrower(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.5F, 1.0F);
+			shuriken.setHeadingFromThrower(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.5F, 1.0F);
 			
-			worldIn.spawnEntity(snowball); // spawn the entity into the world
+			//worldIn.spawnEntity(snowball); // spawn the entity into the world
+			worldIn.spawnEntity(shuriken); // spawn the entity into the world
 		}
 		
 		playerIn.addStat(StatList.getObjectUseStats(this));

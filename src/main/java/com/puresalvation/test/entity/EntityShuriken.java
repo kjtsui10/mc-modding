@@ -2,10 +2,16 @@ package com.puresalvation.test.entity;
 
 import java.util.Arrays;
 
+import com.puresalvation.test.Reference;
+import com.puresalvation.test.TestMod;
 import com.puresalvation.test.init.ModItems;
+import com.puresalvation.test.render.RenderShuriken;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.Render;
+import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;
@@ -14,9 +20,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.client.registry.IRenderFactory;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 public class EntityShuriken extends EntityThrowable {
 	
@@ -47,6 +57,13 @@ public class EntityShuriken extends EntityThrowable {
 
 	
 	// [METHODS]
+	
+	public static void registerEntity()
+	{
+		EntityRegistry.registerModEntity(new ResourceLocation(Reference.MOD_ID, "textures/items/shuriken.png"), EntityShuriken.class, 
+				Reference.TestItems.SHURIKEN.getUnlocalizedName(), 0, TestMod.instance, 64, 10, true);
+	}
+	
 	
 	/* Custom Helper Method
 	 * 
