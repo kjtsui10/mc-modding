@@ -4,6 +4,13 @@ import com.puresalvation.test.entity.EntityShuriken;
 import com.puresalvation.test.init.ModItems;
 import com.puresalvation.test.render.RenderShuriken;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.Render;
+import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.client.renderer.entity.RenderSnowball;
+import net.minecraftforge.fml.client.registry.IRenderFactory;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+
 public class ClientProxy implements CommonProxy {
 
 	@Override
