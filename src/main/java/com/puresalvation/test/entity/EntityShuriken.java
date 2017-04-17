@@ -12,6 +12,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;
@@ -27,6 +28,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class EntityShuriken extends EntityThrowable {
 	
@@ -58,6 +61,9 @@ public class EntityShuriken extends EntityThrowable {
 	
 	// [METHODS]
 	
+	/* 
+	 * Register the entity
+	 */
 	public static void registerEntity()
 	{
 		EntityRegistry.registerModEntity(new ResourceLocation(Reference.MOD_ID, "textures/items/shuriken.png"), EntityShuriken.class, 
@@ -123,13 +129,13 @@ public class EntityShuriken extends EntityThrowable {
 			}
 		}
 		else
-		{
-			if (result.entityHit != null)
+		{			
+			// Ignore the player if the entity hits them and continue through
+			if (result.entityHit != null && !(result.entityHit instanceof EntityPlayer))
 			{
 				this.inflictDamage(result);
+				this.destroySelf();
 			}
-			
-			this.destroySelf();
 		}
 	}
 	
