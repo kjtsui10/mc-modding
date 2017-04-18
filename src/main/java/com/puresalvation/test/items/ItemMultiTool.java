@@ -25,7 +25,7 @@ public class ItemMultiTool extends ItemTool {
 	
 	
 	/*
-	 * This pick can harvest it all! Doesn't mean it can harvest efficiently (see getStrVsBlock for harvesting speed)
+	 * This tool can harvest it all! Doesn't mean it can harvest efficiently (see getStrVsBlock for harvesting speed)
 	 */
 	@Override
 	public boolean canHarvestBlock(IBlockState blockIn) {

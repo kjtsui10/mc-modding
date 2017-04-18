@@ -26,7 +26,8 @@ public class Reference {
 		SUPERPICK("superpick", "ItemSuperpick"),
 		MULTITOOL("multitool", "ItemMultiTool"),
 		BASICMULTITOOL("basicmultitool", "ItemBasicMultiTool"),
-		SHURIKEN("shuriken", "ItemShuriken");
+		SHURIKEN("shuriken", "ItemShuriken"),
+		FINDER("finder", "ItemFinder");
 		
 		private String unlocalizedName;
 		private String registryName;

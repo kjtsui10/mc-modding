@@ -3,6 +3,7 @@ package com.puresalvation.test.init;
 import com.puresalvation.test.Reference;
 import com.puresalvation.test.TestMod;
 import com.puresalvation.test.items.ItemBasicMultiTool;
+import com.puresalvation.test.items.ItemFinder;
 import com.puresalvation.test.items.ItemMeatball;
 import com.puresalvation.test.items.ItemMultiTool;
 import com.puresalvation.test.items.ItemShuriken;
@@ -21,6 +22,7 @@ public class ModItems {
 	public static Item multitool;
 	public static Item basicmultitool;
 	public static Item shuriken;
+	public static Item finder;
 	
 	/*
 	 * Initialize the items
@@ -33,6 +35,7 @@ public class ModItems {
 		basicmultitool = new ItemBasicMultiTool(TestMod.BASIC_MULTITOOL_MATERIAL, TestMod.MULTITOOL_EFFECTIVE_ON);
 		shuriken = new ItemShuriken();
 		//superpick = new ItemSuperpick(EnumHelper.addToolMaterial("SAVAGE", 3, 300, 12.0F, 10.0F, 15), TestMod.MY_EFFECTIVE_ON_1);
+		finder = new ItemFinder();
 	}
 	
 	/*
@@ -45,6 +48,7 @@ public class ModItems {
 		GameRegistry.register(multitool);
 		GameRegistry.register(basicmultitool);
 		GameRegistry.register(shuriken);
+		GameRegistry.register(finder);
 	}
 
 	/*
@@ -57,6 +61,7 @@ public class ModItems {
 		registerRender(multitool);
 		registerRender(basicmultitool);
 		registerRender(shuriken);
+		registerRender(finder);
 	}
 	
 	/*

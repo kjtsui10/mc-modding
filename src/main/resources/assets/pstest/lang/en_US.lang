@@ -3,5 +3,6 @@ item.superpick.name=Super Pickaxe
 item.multitool.name=Multi-Tool
 item.basicmultitool.name= Basic Multi-Tool
 item.shuriken.name=Shuriken
+item.finder.name=Finder
 
 itemGroup.tab_mod=Custom Mod Tab
