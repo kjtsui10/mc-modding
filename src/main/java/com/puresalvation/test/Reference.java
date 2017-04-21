@@ -22,12 +22,15 @@ public class Reference {
 		 * unlocalizedName = name of the ModItems variable (e.g. meatball)
 		 * registryName = name of the item's class (e.g. ItemMeatball)
 		 */
-		MEATBALL("meatball", "ItemMeatball"),
-		SUPERPICK("superpick", "ItemSuperpick"),
-		MULTITOOL("multitool", "ItemMultiTool"),
+
 		BASICMULTITOOL("basicmultitool", "ItemBasicMultiTool"),
+		EXP_ELIXIR_EMPTY("exp_elixir_empty", "ItemExpElixirEmpty"),
+		EXP_ELIXIR_FULL("exp_elixir_full", "ItemExpElixirFull"),
+		FINDER("finder", "ItemFinder"),
+		MEATBALL("meatball", "ItemMeatball"),
+		MULTITOOL("multitool", "ItemMultiTool"),
 		SHURIKEN("shuriken", "ItemShuriken"),
-		FINDER("finder", "ItemFinder");
+		SUPERPICK("superpick", "ItemSuperpick");
 		
 		private String unlocalizedName;
 		private String registryName;

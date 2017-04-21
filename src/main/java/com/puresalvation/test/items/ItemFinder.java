@@ -53,6 +53,7 @@ public class ItemFinder extends Item
 		int px = ppos.getX(), py = ppos.getY(), pz = ppos.getZ();
 		
 		
+		// Scan area around player
 		for (int x = -RANGE; x < RANGE; x++)
 		{
 			for (int y = -HEIGHT_RANGE; y < HEIGHT_RANGE; y++)

@@ -1,8 +1,10 @@
-item.meatball.name=Meatball
-item.superpick.name=Super Pickaxe
-item.multitool.name=Multi-Tool
-item.basicmultitool.name= Basic Multi-Tool
-item.shuriken.name=Shuriken
+item.basicmultitool.name=Basic Multi-Tool
+item.exp_elixir_empty.name=Empty Exp Elixir
+item.exp_elixir_full.name=Full Exp Elixir
 item.finder.name=Finder
+item.meatball.name=Meatball
+item.multitool.name=Multi-Tool
+item.shuriken.name=Shuriken
+item.superpick.name=Super Pickaxe
 
 itemGroup.tab_mod=Custom Mod Tab
