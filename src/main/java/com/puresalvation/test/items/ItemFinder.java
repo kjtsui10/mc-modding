@@ -37,6 +37,7 @@ public class ItemFinder extends Item
 		setUnlocalizedName(Reference.TestItems.FINDER.getUnlocalizedName());
 		setRegistryName(Reference.TestItems.FINDER.getRegistryName());
 		setCreativeTab(TestMod.modTab);
+		setMaxStackSize(1);
 	}
 	
 	@Override

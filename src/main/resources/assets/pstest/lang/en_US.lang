@@ -7,4 +7,6 @@ item.multitool.name=Multi-Tool
 item.shuriken.name=Shuriken
 item.superpick.name=Super Pickaxe
 
+item.ironpouch.name=Iron-Tier Pouch
+
 itemGroup.tab_mod=Custom Mod Tab

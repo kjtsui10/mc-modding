@@ -6,6 +6,7 @@ import com.puresalvation.test.items.ItemBasicMultiTool;
 import com.puresalvation.test.items.ItemExpElixirEmpty;
 import com.puresalvation.test.items.ItemExpElixirFull;
 import com.puresalvation.test.items.ItemFinder;
+import com.puresalvation.test.items.ItemIronPouch;
 import com.puresalvation.test.items.ItemMeatball;
 import com.puresalvation.test.items.ItemMultiTool;
 import com.puresalvation.test.items.ItemShuriken;
@@ -28,6 +29,8 @@ public class ModItems {
 	public static Item shuriken;
 	public static Item superpick;
 
+	public static Item ironpouch;
+
 	
 	/*
 	 * Initialize the items
@@ -44,6 +47,7 @@ public class ModItems {
 		superpick = new ItemSuperpick(TestMod.SAVAGE_MATERIAL, TestMod.MY_EFFECTIVE_ON_1);
 		//superpick = new ItemSuperpick(EnumHelper.addToolMaterial("SAVAGE", 3, 300, 12.0F, 10.0F, 15), TestMod.MY_EFFECTIVE_ON_1);
 		
+		ironpouch = new ItemIronPouch();
 	}
 	
 	/*
@@ -59,6 +63,8 @@ public class ModItems {
 		GameRegistry.register(multitool);
 		GameRegistry.register(shuriken);
 		GameRegistry.register(superpick);
+		
+		GameRegistry.register(ironpouch);
 	}
 
 	/*
@@ -74,6 +80,8 @@ public class ModItems {
 		registerRender(multitool);
 		registerRender(shuriken);
 		registerRender(superpick);
+		
+		registerRender(ironpouch);
 	}
 	
 	/*
